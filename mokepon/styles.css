@@ -1,0 +1,103 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300&display=swap');
+body{
+    
+    font-family: 'Poppins', sans-serif;
+   background-image: url(./assets/fondo.png);
+}
+
+
+#seleccionar-mascota{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+#title{
+    color: rgb(83, 80, 255);
+    font-size: 32px;
+}
+
+.subtitulo{
+    color: #5b54ba;
+    font-size: 24px;
+}
+
+.tarjeta-de-mokepon{
+    width: 165px;
+    height: 100px;
+    background-color: #fffc8c;
+    padding: 10px;
+    box-sizing: border-box;
+    margin:10px;
+    border: 1px solid lightcoral;
+    border-radius:20px;
+    display: flex;
+    color:#5b54ba;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.tarjeta-de-mokepon img{
+    width:80px;
+
+}
+
+
+
+#boton-mascota{
+    width: 180px;
+    height: 40px;
+    background-color:#a1f78b;
+    border: 2px solid lightcoral;
+    margin-top:30px;
+    border-radius: 20px;
+
+    color:crimson ;
+}
+
+input{
+   background-color: #fffc8c;
+}
+
+#seleccionar-ataque{
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarjetas{
+    display: flex;
+    gap:10px;
+
+}
+
+.boton-de-ataque{
+    background-color: cyan;
+    border-radius: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-color: transparent;
+    width: 100px;
+    color:rgb(175, 35, 35);
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*label{
+    background-color: turquoise;
+    width:310px;
+    height:50px;
+}
+
+input{
+    background-color: navy;
+    width:310px;
+    height:50px;
+}
+
+button{
+    background-color: salmon;
+    width:310px;
+    height:50px; 
+} */
