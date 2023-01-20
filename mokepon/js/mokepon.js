@@ -48,10 +48,20 @@ function ataqueEnemigo(){
 }
 
 function crearMensaje(resultado){
-    let sectionMensajes=document.getElementById('mensajes')
-    let parrafo=document.createElement('p')
-    parrafo.innerHTML='La mascota ataco con ' +ataqueJugador +',la mascota del enemigo ataco con '+ataqueEnemigo2+ "-" +resultado
-    sectionMensajes.appendChild(parrafo)
+    let sectionMensajes=document.getElementById('resultado')
+    let ataquesDelJugador=document.getElementById('ataques-del-Jugador')
+    let ataquesDelEnemigo=document.getElementById('ataques-del-enemigo')
+    
+   
+    let nuevoAtaqueDelJugador=document.createElement('p')
+    let nuevoAtaqueDelEnemigo=document.createElement('p')
+
+    sectionMensajes.innerHTML=resultado
+    nuevoAtaqueDelJugador.innerHTML=ataqueJugador
+    nuevoAtaqueDelEnemigo.innerHTML=ataqueEnemigo
+    
+    ataquesDelJugador.appendChild(nuevoAtaqueDelJugador)
+    ataquesDelEnemigo.appendChild(nuevoAtaqueDelEnemigo)
 }
 
 function crearMensajeFinal(resultadoFinal){
